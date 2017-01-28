@@ -1,6 +1,6 @@
 
 import(HSAUR2)
-export(stalac,chiplot,bvbox)
+export(stalac,chiplot,bvbox, biweight)
 
 importFrom("graphics", "abline", "axis", "lines", "par", "plot",
      "points", "segments", "text")
