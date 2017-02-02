@@ -8,7 +8,7 @@ Boxplots in two dimensions
 }
 \usage{
 bvbox(a, d = 7, mtitle = "Bivariate Boxplot", method = "robust", 
-      xlab = "X", ylab = "Y", add = FALSE, ...)
+      xlab = "X", ylab = "Y", add = FALSE, labels = 1:dim(a)[1],  ...)
 }
 \arguments{
   \item{a}{a matrix}
@@ -18,6 +18,7 @@ bvbox(a, d = 7, mtitle = "Bivariate Boxplot", method = "robust",
   \item{xlab}{x axis label}
   \item{ylab}{y axis label}
   \item{add}{add to existing plot?}
+  \item{labels}{labels for outliers}
   \item{\dots}{additional plot arguments}
 }
 \details{

@@ -1,6 +1,6 @@
 
 bvbox <- function(a, d = 7, mtitle = "Bivariate Boxplot",
- method = "robust",xlab="X",ylab="Y", add = FALSE, ...)
+ method = "robust",xlab="X",ylab="Y", add = FALSE, labels = 1:dim(a)[1], ...)
 {
 #
 #a is data matrix
@@ -63,6 +63,11 @@ bvbox <- function(a, d = 7, mtitle = "Bivariate Boxplot",
 	lines(xpp, ypp, lty = 2)
 	segments(minxl, y1, maxxl, y2, lty = 3)
 	segments(x1, minyl, x2, maxyl, lty = 4)
+	if(sum(sp::point.in.polygon(a[,1], a[,2], xpp, ypp) != 1) != 0)
+	  index <- which(point.in.polygon(a[,1], a[,2], xpp, ypp) == 0)
+	  suppressWarnings(car::showLabels(a[,1][index], a[,2][index], labels, 
+	                  id.method = list("x"), id.n = length(index), 
+	                  id.cex = 0.6))
 }
 #
 biweight<-function(a,const1=9,const2=36,err=0.0001) {
