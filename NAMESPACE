@@ -5,3 +5,5 @@ export(stalac,chiplot,bvbox, biweight)
 importFrom("graphics", "abline", "axis", "lines", "par", "plot",
      "points", "segments", "text")
 importFrom("stats", "cor", "median", "qchisq", "var")
+importFrom("sp", "point.in.polygon")
+importFrom("car", "showLabels")
