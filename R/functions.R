@@ -65,7 +65,7 @@ bvbox <- function(a, d = 7, mtitle = "Bivariate Boxplot",
 	segments(x1, minyl, x2, maxyl, lty = 4)
 	if(sum(sp::point.in.polygon(a[,1], a[,2], xpp, ypp) != 1) != 0)
 	  index <- which(point.in.polygon(a[,1], a[,2], xpp, ypp) == 0)
-	  suppressWarnings(car::showLabels(a[,1][index], a[,2][index], labels, 
+	  suppressWarnings(car::showLabels(a[,1][index], a[,2][index], labels[index], 
 	                  id.method = list("x"), id.n = length(index), 
 	                  id.cex = 0.6))
 }
