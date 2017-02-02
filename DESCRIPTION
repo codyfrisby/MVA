@@ -7,10 +7,10 @@ Maintainer: Torsten Hothorn <Torsten.Hothorn@R-project.org>
 Description: Functions, data sets, analyses and examples from the book 
   `An Introduction to Applied Multivariate Analysis with R' 
   (Brian S. Everitt and Torsten Hothorn, Springer, 2011). 
-Depends: HSAUR2, sp
+Depends: HSAUR2
 Suggests: mvtnorm, mclust, lattice, flexclust, nlme, RLRsim, multcomp,
         ape, MASS, sem, KernSmooth, scatterplot3d
-Imports: car
+Imports: car, sp
 URL: http://dx.doi.org/10.1007/978-1-4419-9650-3
 License: GPL-2
 Encoding: UTF-8
