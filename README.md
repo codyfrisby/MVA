@@ -1,5 +1,4 @@
 # MVA: An Introduction to Applied Multivariate Analysis with R
-:exclamation: This is a mirror of a read-only R package from CRAN.  It will not be merged or updated to CRAN.  
 
 Functions, data sets, analyses and examples from the book ‘An Introduction to Applied Multivariate Analysis with R’ (Brian S. Everitt and Torsten Hothorn, Springer, 2011).
 
@@ -12,3 +11,4 @@ install.packages('MVA')
 ```r
 devtools::install_github('codyfrisby/MVA')
 ```
+## NOTE:  This was forked from CRAN/MVA.  It will not be updated to CRAN.  I started editing this package as part of my multivariate statistics coursework.  Originally I just wanted to add labels to points that were outside the outer ellipse on the `bvbox` function.  
