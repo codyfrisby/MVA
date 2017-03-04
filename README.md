@@ -11,4 +11,4 @@ install.packages('MVA')
 ```r
 devtools::install_github('codyfrisby/MVA')
 ```
-## NOTE:  This was forked from CRAN/MVA.  It will not be updated to CRAN.  I started editing this package as part of my multivariate statistics coursework.  Originally I just wanted to add labels to points that were outside the outer ellipse on the `bvbox` function.  
+### NOTE:  This was forked from CRAN/MVA.  It will not be updated to CRAN.  I started editing this package as part of my multivariate statistics coursework.  Originally I just wanted to add labels to points that were outside the outer ellipse on the `bvbox` function.  
